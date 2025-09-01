@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parvej Rugs</title>
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <style>
+      .owl-nav-custom {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .owl-nav-custom .nav-btn {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #0d6efd;
+        background: #fff;
+        color: #0d6efd;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .owl-nav-custom .nav-btn:hover {
+        background: #0d6efd;
+        color: #fff;
+        box-shadow: 0 6px 18px rgba(13, 110, 253, 0.25);
+        transform: scale(1.05);
+      }
+
+      .team-item img {
+        height: 250px;
+        /* set uniform height */
+        width: 100%;
+        /* full width of the container */
+        object-fit: cover;
+        /* crop image to fill without stretching */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <div
+      class="container-fluid page-header mb-5 py-5"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url(img/carpet.jpg) center center no-repeat;
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb text-uppercase">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Pages</a>
+            </li>
+            <li class="breadcrumb-item text-white active" aria-current="page">
+              Services
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Service Start -->
+    <div class="container-xxl service py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="text-primary text-uppercase">// Our Services //</h6>
+          <h1 class="mb-5">What We Offer</h1>
+        </div>
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-4">
+            <div class="nav w-100 nav-pills me-4">
+              <!-- Tab 1 -->
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-1"
+                type="button"
+              >
+                <i class="fa fa-th-large fa-2x me-3"></i>
+                <h4 class="m-0">Hand-Tufted Rugs</h4>
+              </button>
+              <!-- Tab 2 -->
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-2"
+                type="button"
+              >
+                <i class="fa fa-border-style fa-2x me-3"></i>
+                <h4 class="m-0">Hand-Knotted Rugs</h4>
+              </button>
+              <!-- Tab 3 -->
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-3"
+                type="button"
+              >
+                <i class="fa fa-cubes fa-2x me-3"></i>
+                <h4 class="m-0">Custom Rugs</h4>
+              </button>
+              <!-- Tab 4 -->
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-4"
+                type="button"
+              >
+                <i class="fa fa-border-all fa-2x me-3"></i>
+                <h4 class="m-0">Wool Rugs</h4>
+              </button>
+              <!-- Tab 5 -->
+              <button
+                class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
+                data-bs-toggle="pill"
+                data-bs-target="#tab-pane-5"
+                type="button"
+              >
+                <i class="fa fa-tree fa-2x me-3"></i>
+                <h4 class="m-0">Designer Rugs</h4>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="tab-content w-100">
+              <!-- Tab 1: Hand-Tufted Rugs -->
+              <div class="tab-pane fade show active" id="tab-pane-1">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute img-fluid w-100 h-100"
+                        src="img/handtufted.jpg"
+                        style="object-fit: cover"
+                        alt="Hand-Tufted Rugs"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Hand-Tufted Rugs</h3>
+                    <p class="mb-4">
+                      Luxurious hand-tufted rugs that combine soft textures with
+                      intricate designs for your interiors.
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Soft &
+                      Comfortable
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Premium
+                      Quality Wool
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Available in
+                      Multiple Designs
+                    </p>
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                    >
+                      Read More<i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 2: Hand-Knotted Rugs -->
+              <div class="tab-pane fade" id="tab-pane-2">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute img-fluid w-100 h-100"
+                        src="img/handknottedrug.jpg"
+                        style="object-fit: cover"
+                        alt="Hand-Knotted Rugs"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Hand-Knotted Rugs</h3>
+                    <p class="mb-4">
+                      Exquisitely crafted hand-knotted rugs showcasing
+                      traditional craftsmanship and long-lasting durability.
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Durable &
+                      Elegant
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Unique
+                      Designs
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Perfect for
+                      Homes & Offices
+                    </p>
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                    >
+                      Read More<i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 3: Custom Rugs -->
+              <div class="tab-pane fade" id="tab-pane-3">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute img-fluid w-100 h-100"
+                        src="img/customrug.jpg"
+                        style="object-fit: cover"
+                        alt="Custom Rugs"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Custom Rugs</h3>
+                    <p class="mb-4">
+                      Tailor-made rugs designed to fit your style, size, and
+                      interior décor perfectly.
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Personalized
+                      Designs
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>High Quality
+                      Materials
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Made to Order
+                    </p>
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                    >
+                      Read More<i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 4: Wool Rugs -->
+              <div class="tab-pane fade" id="tab-pane-4">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute img-fluid w-100 h-100"
+                        src="img/woolrugs.jpg"
+                        style="object-fit: cover"
+                        alt="Wool Rugs"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Wool Rugs</h3>
+                    <p class="mb-4">
+                      Soft, durable, and luxurious wool rugs that bring warmth
+                      and elegance to your interiors.
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Premium Wool
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Durable &
+                      Comfortable
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Elegant
+                      Designs
+                    </p>
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                    >
+                      Read More<i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tab 5: Designer Rugs -->
+              <div class="tab-pane fade" id="tab-pane-5">
+                <div class="row g-4">
+                  <div class="col-md-6" style="min-height: 350px">
+                    <div class="position-relative h-100">
+                      <img
+                        class="position-absolute img-fluid w-100 h-100"
+                        src="img/designerrugs.jpg"
+                        style="object-fit: cover"
+                        alt="Designer Rugs"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="mb-3">Designer Rugs</h3>
+                    <p class="mb-4">
+                      Stylish and exclusive designer rugs crafted to elevate
+                      interiors with unique patterns and colors.
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Unique &
+                      Trendy
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>High-End
+                      Designs
+                    </p>
+                    <p>
+                      <i class="fa fa-check text-success me-3"></i>Perfect for
+                      Modern Homes
+                    </p>
+                    <a
+                      href="contact.html"
+                      class="btn btn-primary py-3 px-5 mt-3"
+                    >
+                      Read More<i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="text-primary text-uppercase">// Our Artisans //</h6>
+          <h1 class="mb-5">Meet Our Expert Carpet Makers</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img
+                  class="img-fluid"
+                  src="img/team3.jpg"
+                  style="object-fit: cover"
+                  alt=""
+                />
+                <div
+                  class="team-overlay position-absolute start-0 top-0 w-100 h-100"
+                >
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-4">
+                <h5 class="fw-bold mb-0">Mohd Arif</h5>
+                <small>Production & Quality Manager</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/team2.jpg" alt="" />
+                <div
+                  class="team-overlay position-absolute start-0 top-0 w-100 h-100"
+                >
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-4">
+                <h5 class="fw-bold mb-0">Sajid Khan</h5>
+                <small>Operations & Logistics Manager</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/team.jpg" alt="" />
+                <div
+                  class="team-overlay position-absolute start-0 top-0 w-100 h-100"
+                >
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-4">
+                <h5 class="fw-bold mb-0">Nasreen Bano</h5>
+                <small>Sales & Marketing Head</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/team4.jpg" alt="" />
+                <div
+                  class="team-overlay position-absolute start-0 top-0 w-100 h-100"
+                >
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a class="btn btn-square mx-1" href=""
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-light text-center p-4">
+                <h5 class="fw-bold mb-0">Imran Qureshi</h5>
+                <small>Product & Design Specialist</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center">
+          <h6 class="text-primary text-uppercase">// Testimonial //</h6>
+          <h1 class="mb-5">Our Clients Say!</h1>
+        </div>
+
+        <div class="owl-carousel testimonial-carousel owl-theme">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-item text-center">
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-3"
+              src="img/testimonial2.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">Rohit Mehra</h5>
+            <p>Hand Tufted Rug</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                "The hand-tufted rug I purchased is soft, luxurious, and
+                beautifully crafted. It adds elegance and comfort to my living
+                room."
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-item text-center">
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-3"
+              src="img/testimonial1.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">Ananya Sharma</h5>
+            <p>Hand Knotted Rug</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                "The hand-knotted rug is exquisite and extremely durable. The
+                craftsmanship and design exceeded my expectations."
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-item text-center">
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-3"
+              src="img/testimonial4.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">Vikram Singh</h5>
+            <p>Custom Rug</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                "Parvej Rugs created a custom rug as per my specifications. The
+                quality and design are perfect, making my space truly unique."
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-item text-center">
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-3"
+              src="img/testimonial3.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">Priya Gupta</h5>
+            <p>Designer Rug</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                "The designer rug I ordered is stunning. The colors, patterns,
+                and quality are top-notch. It really elevates the look of my
+                room."
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-item text-center">
+            <img
+              class="bg-light rounded-circle p-2 mx-auto mb-3"
+              src="img/testimonial5.jpg"
+              style="width: 80px; height: 80px"
+            />
+            <h5 class="mb-0">Sonal Kapoor</h5>
+            <p>Wool Rug</p>
+            <div class="testimonial-text bg-light text-center p-4">
+              <p class="mb-0">
+                "The wool rug is incredibly soft and warm. Perfect for winter,
+                it adds a cozy and luxurious feel to my home."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery and Owl Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(function () {
+        var $owl = $(".testimonial-carousel");
+
+        $owl.owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          smartSpeed: 800,
+          dots: false,
+          nav: false,
+        });
+
+        // Custom nav
+        $(".owl-prev-custom").on("click", function () {
+          $owl.trigger("prev.owl.carousel");
+        });
+        $(".owl-next-custom").on("click", function () {
+          $owl.trigger("next.owl.carousel");
+        });
+      });
+    </script>
+
+    <!-- Testimonial End -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
