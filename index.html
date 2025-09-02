@@ -1,54 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Culture N Garment LLP</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+<head>
+  <meta charset="utf-8" />
+  <title>T2F Trades</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link
-      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
-      rel="stylesheet"
-    />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-<link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
   <style>
     .owl-nav-custom {
@@ -57,6 +43,7 @@
       gap: 15px;
       margin-top: 20px;
     }
+
     .owl-nav-custom .nav-btn {
       width: 45px;
       height: 45px;
@@ -71,1333 +58,1221 @@
       cursor: pointer;
       transition: all .3s ease;
     }
+
     .owl-nav-custom .nav-btn:hover {
       background: #0d6efd;
       color: #fff;
-      box-shadow: 0 6px 18px rgba(13,110,253,.25);
+      box-shadow: 0 6px 18px rgba(13, 110, 253, .25);
       transform: scale(1.05);
     }
-      .card-img-top {
-        height: 250px;
-        /* Set desired height */
-        width: 100%;
-        /* Full width of the card */
-        object-fit: cover;
+
+    .card-img-top {
+      height: 250px;
+      /* Set desired height */
+      width: 100%;
+      /* Full width of the card */
+      object-fit: cover;
+    }
+
+    .card-img-top {
+      height: 250px;
+      /* uniform image height */
+      width: 100%;
+      /* full card width */
+      object-fit: cover;
+      /* crop without distortion */
+    }
+
+    /* Crop and fill image without distortion */
+    .team-item img {
+      height: 250px;
+      /* set uniform height */
+      width: 100%;
+      /* full width of the container */
+      object-fit: cover;
+      /* crop image to fill without stretching */
+    }
+
+    /* Responsive text sizes */
+    .custom-heading {
+      font-size: 1.2rem;
+      /* mobile default */
+    }
+
+    .custom-subheading {
+      font-size: 1.6rem;
+    }
+
+    @media (min-width: 768px) {
+      .custom-heading {
+        font-size: 1.5rem;
+        /* tablet */
       }
 
-      .card-img-top {
-        height: 250px;
-        /* uniform image height */
-        width: 100%;
-        /* full card width */
-        object-fit: cover;
-        /* crop without distortion */
+      .custom-subheading {
+        font-size: 2rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .custom-heading {
+        font-size: 1.8rem;
+        /* desktop */
       }
 
-      /* Crop and fill image without distortion */
-      .team-item img {
-        height: 250px;
-        /* set uniform height */
-        width: 100%;
-        /* full width of the container */
-        object-fit: cover;
-        /* crop image to fill without stretching */
+      .custom-subheading {
+        font-size: 2.5rem;
       }
-      /* Responsive text sizes */
-  .custom-heading {
-    font-size: 1.2rem; /* mobile default */
-  }
-  .custom-subheading {
-    font-size: 1.6rem;
-  }
-  @media (min-width: 768px) {
-    .custom-heading {
-      font-size: 1.5rem; /* tablet */
     }
-    .custom-subheading {
-      font-size: 2rem;
-    }
-  }
-  @media (min-width: 992px) {
-    .custom-heading {
-      font-size: 1.8rem; /* desktop */
-    }
-    .custom-subheading {
-      font-size: 2.5rem;
-    }
-  }
+
     .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .card-body .btn {
-    margin-top: auto;
-  }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
 
+    .card-body .btn {
+      margin-top: auto;
+    }
+  </style>
+</head>
 
-    </style>
-  </head>
-
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
-      </div>
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
-    <!-- Header -->
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-            <small class="fa fa-envelope text-primary me-2"> </small>
-             <!-- <small><a href="mailto:info@example.com" class="text-dark text-decoration-none"> -->
-                        <!-- sunilk3143@gmail.com </a></small>  -->
-          </div>
-          <div class="h-100 d-inline-flex align-items-center py-3">
-            <small class="far fa-clock text-primary me-2"></small>
-            <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
-          </div>
+  <!-- Header -->
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-light p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+      <div class="col-lg-7 px-5 text-start">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-envelope text-primary me-2"> </small>
+          <!-- <small><a href="mailto:info@example.com" class="text-dark text-decoration-none"> -->
+          <!-- sunilk3143@gmail.com </a></small>  -->
         </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-            <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+91 9001280803</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-0" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
+        <div class="h-100 d-inline-flex align-items-center py-3">
+          <small class="far fa-clock text-primary me-2"></small>
+          <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+        </div>
+      </div>
+      <div class="col-lg-5 px-5 text-end">
+        <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+          <small class="fa fa-phone-alt text-primary me-2"></small>
+          <small>+91 9001280803</small>
+        </div>
+        <div class="h-100 d-inline-flex align-items-center">
+          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
-    <!-- Topbar End -->
+  </div>
+  <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0"
-    >
-      <a
-        href="index.html"
-        class="navbar-brand d-flex align-items-center px-4 px-lg-5"
-      >
-        <h2 class="m-0 text-primary"></i>T2F Trades</h2>
-        
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler me-4"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <h2 class="m-0 text-primary"></i>T2F Trades</h2>
+
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="about.html" class="nav-item nav-link">About</a>
+        <a href="service.html" class="nav-item nav-link">Services</a>
+        <a href="collection.html" class="nav-item nav-link">Collection</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+          <div class="dropdown-menu fade-up m-0">
+            <a href="Tamarind.html" class="dropdown-item">Tamarind</a>
+            <a href="Red-chilli.html" class="dropdown-item">Red Chilli (Dried)</a>
+            <a href="garlic.html" class="dropdown-item">Garlic (Dried)</a>
+            <a href="ginger.html" class="dropdown-item">Ginger (Dried)</a>
+            <a href="turmeric.html" class="dropdown-item">Turmeric</a>
+            <a href="coconut.html" class="dropdown-item">Coconut</a>
+            <a href="cinnaamon.html" class="dropdown-item">Cinnamon</a>
+            <a href="clove.html" class="dropdown-item">Clove</a>
+            <a href="black-papper.html" class="dropdown-item">Black Pepper</a>
+            <a href="onion.html" class="dropdown-item">Onion</a>
+            <a href="tomato.html" class="dropdown-item">Tomato</a>
+            <a href="banana.html" class="dropdown-item">Banana</a>
+            <a href="cotton.html" class="dropdown-item">Cotton</a>
+            <a href="tea.html" class="dropdown-item">Tea</a>
+            <a href="Sugarcane.html" class="dropdown-item">Sugarcane</a>
+            <a href="Maize.html" class="dropdown-item">Maize</a>
+            <a href="Rice.html" class="dropdown-item">Rice</a>
+            <a href="Wheat.html" class="dropdown-item">Wheat</a>
+            <a href="Pulses.html" class="dropdown-item">Pulses</a>
+          </div>
+        </div>
+        <!-- <a href="#" class="nav-item nav-link">Contact</a> -->
+        <a href="contact.html" class="nav-item nav-link">Contact</a>
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Carousel Start -->
+  <div class="container-fluid p-0 mb-5">
+    <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 - Rice -->
+        <div class="carousel-item active">
+          <img class="w-100" src="img/rice.jpg" height="600px" alt="Rice" style="object-fit: cover" />
+          <div class="carousel-caption d-flex align-items-center">
+            <div class="container">
+              <div class="row align-items-center text-center justify-content-center">
+                <div class="col-10 col-lg-7 text-center text-lg-start">
+                  <h3 class="text-white text-uppercase text-center mb-3">
+                    Premium Quality Rice
+                  </h3>
+                  <h4 class="display-3 text-white mb-4 pb-3 text-center">
+                    Fresh, nutritious, and ideal for every meal.
+                  </h4>
+                  <div class="justify-content-center text-center">
+                    <a href="#" class="btn btn-primary py-3 px-5">
+                      Explore Collection <i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Wheat -->
+        <div class="carousel-item">
+          <img class="w-100" src="img/wheat.jpg" height="600px" alt="Wheat" />
+          <div class="carousel-caption d-flex align-items-center">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-10 col-lg-7 text-center text-lg-start">
+                  <h3 class="text-white text-uppercase mb-3 text-center">
+                    Finest Wheat Grains
+                  </h3>
+                  <h4 class="display-3 text-white mb-4 pb-3 text-center">
+                    High-quality wheat for flour, bread, and healthy living.
+                  </h4>
+                  <div class="justify-content-center text-center">
+                    <a href="#" class="btn btn-primary py-3 px-5">
+                      Explore Collection <i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 - Sugarcane -->
+        <div class="carousel-item">
+          <img class="w-100" src="img/sugarcane.jpg" height="600px" alt="Sugarcane" />
+          <div class="carousel-caption d-flex align-items-center">
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-10 col-lg-7 text-center text-lg-start">
+                  <h3 class="text-white text-uppercase mb-3 text-center">
+                    Fresh Sugarcane
+                  </h3>
+                  <h4 class="display-3 text-white mb-4 pb-3 text-center">
+                    Natural sweetness for juices, jaggery, and more.
+                  </h4>
+                  <div class="justify-content-center text-center">
+                    <a href="#" class="btn btn-primary py-3 px-5">
+                      Explore Collection <i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="#" class="nav-item nav-link active">Home</a>
-          <a href="#" class="nav-item nav-link">About</a>
-          <a href="#" class="nav-item nav-link">Services</a>
-          <a href="#" class="nav-item nav-link">Collection</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Products</a
-            >
-            <div class="dropdown-menu fade-up m-0">
-              <a href="#" class="dropdown-item">Wheat</a>
-              <a href="#" class="dropdown-item">Rice</a>
-              <a href="#" class="dropdown-item">Sugarcane</a>
-              <a href="#" class="dropdown-item">Maize</a>
-              <a href="#" class="dropdown-item">Red Chilli</a>
-              <a href="#" class="dropdown-item">Black Pepper</a>
-            </div>
-          </div>
-          <!-- <a href="#" class="nav-item nav-link">Contact</a> -->
-          <a href="#" class="nav-item nav-link">Contact</a>
-        </div>
-        
-      </div>
-    </nav>
-    <!-- Navbar End -->
-    <!-- header end -->
-
-    <!-- Carousel Start -->
-   <div class="container-fluid p-0 mb-5">
-  <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      
-      <!-- Slide 1 - Rice -->
-      <div class="carousel-item active">
-        <img
-          class="w-100"
-          src="img/rice.jpg"
-          height="600px"
-          alt="Rice"
-          style="object-fit: cover"
-        />
-        <div class="carousel-caption d-flex align-items-center">
-          <div class="container">
-            <div class="row align-items-center text-center justify-content-center">
-              <div class="col-10 col-lg-7 text-center text-lg-start">
-                <h3 class="text-white text-uppercase text-center mb-3">
-                  Premium Quality Rice
-                </h3>
-                <h4 class="display-3 text-white mb-4 pb-3 text-center">
-                  Fresh, nutritious, and ideal for every meal.
-                </h4>
-                <div class="justify-content-center text-center">
-                  <a href="#" class="btn btn-primary py-3 px-5">
-                    Explore Collection <i class="fa fa-arrow-right ms-3"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 2 - Wheat -->
-      <div class="carousel-item">
-        <img class="w-100" src="img/wheat.jpg" height="600px" alt="Wheat" />
-        <div class="carousel-caption d-flex align-items-center">
-          <div class="container">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-10 col-lg-7 text-center text-lg-start">
-                <h3 class="text-white text-uppercase mb-3 text-center">
-                  Finest Wheat Grains
-                </h3>
-                <h4 class="display-3 text-white mb-4 pb-3 text-center">
-                  High-quality wheat for flour, bread, and healthy living.
-                </h4>
-                <div class="justify-content-center text-center">
-                  <a href="#" class="btn btn-primary py-3 px-5">
-                    Explore Collection <i class="fa fa-arrow-right ms-3"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 3 - Sugarcane -->
-      <div class="carousel-item">
-        <img
-          class="w-100"
-          src="img/sugarcane.jpg"
-          height="600px"
-          alt="Sugarcane"
-        />
-        <div class="carousel-caption d-flex align-items-center">
-          <div class="container">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-10 col-lg-7 text-center text-lg-start">
-                <h3 class="text-white text-uppercase mb-3 text-center">
-                  Fresh Sugarcane
-                </h3>
-                <h4 class="display-3 text-white mb-4 pb-3 text-center">
-                  Natural sweetness for juices, jaggery, and more.
-                </h4>
-                <div class="justify-content-center text-center">
-                  <a href="#" class="btn btn-primary py-3 px-5">
-                    Explore Collection <i class="fa fa-arrow-right ms-3"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Controls -->
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#header-carousel"
-      data-bs-slide="prev"
-    >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#header-carousel"
-      data-bs-slide="next"
-    >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
-
-    <!-- Carousel End -->
-
-    <!-- Service Start -->
-   <div class="container-xxl py-5">
-  <div class="container">
-    <div class="row g-4">
-      
-      <!-- Rice & Wheat -->
-      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="d-flex py-5 px-4">
-          <i class="fa fa-leaf fa-3x text-primary flex-shrink-0"></i>
-          <div class="ps-4">
-            <h5 class="mb-3">Rice & Wheat</h5>
-            <p>
-              High-quality rice and wheat cultivated with care, ensuring nutrition, purity, and freshness in every grain.
-            </p>
-            <a class="text-secondary border-bottom" href="">
-              Explore Grains
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Maize & Sugarcane -->
-      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="d-flex bg-light py-5 px-4">
-          <i class="fa fa-pagelines fa-3x text-primary flex-shrink-0"></i>
-          <div class="ps-4">
-            <h5 class="mb-3">Maize & Sugarcane</h5>
-            <p>
-              Freshly harvested maize and sugarcane, grown with sustainable practices for food, feed, and processing needs.
-            </p>
-            <a class="text-secondary border-bottom" href="">
-              View Products
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Pulses, Tea & Cotton -->
-      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="d-flex py-5 px-4">
-          <i class="fa fa-envira fa-3x text-primary flex-shrink-0"></i>
-          <div class="ps-4">
-            <h5 class="mb-3">Pulses, Tea & Cotton</h5>
-            <p>
-              Premium pulses, aromatic tea, and top-quality cotton that bring taste, comfort, and excellence to your lifestyle.
-            </p>
-            <a class="text-secondary border-bottom" href="">
-              Discover More
-            </a>
-          </div> 
-        </div>
-      </div>
-
+      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
-</div>
+  <!-- Carousel End -->
 
-
-
-
-
-
-    <!-- Service End -->
-
-    <!-- About Start -->
+  <!-- Service Start -->
   <div class="container-xxl py-5">
-  <div class="container">
-    <div class="row g-5">
-      <!-- Image Section -->
-      <div class="col-lg-6 pt-4" style="min-height: 400px">
-        <div class="position-relative h-100">
-          <img
-            class="position-absolute img-fluid w-100 h-100"
-            src="img/sugarcane.jpg"
-            style="object-fit: contain"
-            alt="T2F Trades"
-          />
-        </div>
-      </div>
+    <div class="container">
+      <div class="row g-4">
 
-      <!-- Text Section -->
-      <div class="col-lg-6">
-        <h6 class="text-primary text-uppercase">// About Us //</h6>
-        <h1 class="mb-4">
-          <span class="text-primary">T2F Trades</span> — Trusted Partner in Agricultural Commodities & Global Trade
-        </h1>
-        <p class="mb-4">
-          <b>T2F Trades</b> is a leading name in the export and supply of premium-quality agricultural products.  
-          We specialize in delivering a wide range of food grains, cash crops, and spices including <b>Rice, Wheat, Maize, Sugarcane, Pulses, Tea, and Cotton</b>.  
-          Expanding our portfolio, we also provide <b>Banana, Tomato, Onion, Black Pepper, Clove, Cinnamon, Coconut, Turmeric, Dried Ginger, Dried Garlic, Dried Red Chilli, and Tamarind</b>.  
-
-          With a strong focus on quality, sustainable sourcing, and timely delivery, we cater to both domestic and international markets.  
-          Our mission is to bridge farmers and global consumers through fair trade, trust, and excellence.  
-        </p>
-
-        <div class="row g-4 mb-3 pb-3">
-          <div class="col-12">
-            <div class="d-flex">
-              <div
-                class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
-                style="width: 45px; height: 45px"
-              >
-                <span class="fw-bold text-secondary">01</span>
-              </div>
-              <div class="ps-3">
-                <h6>Food Grains & Pulses</h6>
-                <span>
-                  Supplying high-quality rice, wheat, maize, and pulses trusted by global consumers.
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <div class="d-flex">
-              <div
-                class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
-                style="width: 45px; height: 45px"
-              >
-                <span class="fw-bold text-secondary">02</span>
-              </div>
-              <div class="ps-3">
-                <h6>Cash Crops & Beverages</h6>
-                <span>
-                  Delivering premium sugarcane, tea, and cotton with a focus on sustainable farming practices.
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <div class="d-flex">
-              <div
-                class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
-                style="width: 45px; height: 45px"
-              >
-                <span class="fw-bold text-secondary">03</span>
-              </div>
-              <div class="ps-3">
-                <h6>Spices, Fruits & Vegetables</h6>
-                <span>
-                  Exporting black pepper, clove, cinnamon, turmeric, ginger, garlic, red chilli, tamarind, banana, tomato, and onion to international markets.
-                </span>
-              </div>
+        <!-- Rice & Wheat -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="d-flex py-5 px-4">
+            <i class="fa fa-leaf fa-3x text-primary flex-shrink-0"></i>
+            <div class="ps-4">
+              <h5 class="mb-3">Rice & Wheat</h5>
+              <p>
+                High-quality rice and wheat cultivated with care, ensuring nutrition, purity, and freshness in every
+                grain.
+              </p>
+              <a class="text-secondary border-bottom" href="">
+                Explore Grains
+              </a>
             </div>
           </div>
         </div>
 
-        <a href="#" class="btn bg-primary text-white py-3 px-5">
-          Read More <i class="fa fa-arrow-right ms-3"></i>
-        </a>
+        <!-- Maize & Sugarcane -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="d-flex bg-light py-5 px-4">
+            <i class="fa fa-pagelines fa-3x text-primary flex-shrink-0"></i>
+            <div class="ps-4">
+              <h5 class="mb-3">Maize & Sugarcane</h5>
+              <p>
+                Freshly harvested maize and sugarcane, grown with sustainable practices for food, feed, and processing
+                needs.
+              </p>
+              <a class="text-secondary border-bottom" href="">
+                View Products
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pulses, Tea & Cotton -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="d-flex py-5 px-4">
+            <i class="fa fa-envira fa-3x text-primary flex-shrink-0"></i>
+            <div class="ps-4">
+              <h5 class="mb-3">Pulses, Tea & Cotton</h5>
+              <p>
+                Premium pulses, aromatic tea, and top-quality cotton that bring taste, comfort, and excellence to your
+                lifestyle.
+              </p>
+              <a class="text-secondary border-bottom" href="">
+                Discover More
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-</div>
+  <!-- Service End -->
 
-
-
-    <!-- About End -->
-    <!-- Products Section -->
-   <div class="container py-5">
-  <h1 class="text-center mb-5">Our Products</h1>
-  <div class="row justify-content-center">
-    
-    <!-- Rice -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/rice.jpg" class="card-img-top img-fluid" alt="Rice" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Rice</h5>
-          <p class="card-text">Premium quality rice for global markets.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Rice">Enquiry</a>
-            <a href="rice.html" class="btn btn-outline-primary">Details</a>
+  <!-- About Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Image Section -->
+        <div class="col-lg-6 pt-4" style="min-height: 400px">
+          <div class="position-relative h-100">
+            <img class="position-absolute img-fluid w-100 h-100" src="img/sugarcane.jpg" style="object-fit: contain"
+              alt="T2F Trades" />
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Wheat -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/wheat.jpg" class="card-img-top img-fluid" alt="Wheat" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Wheat</h5>
-          <p class="card-text">High-quality wheat grains for food industries.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Wheat">Enquiry</a>
-            <a href="wheat.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        <!-- Text Section -->
+        <div class="col-lg-6">
+          <h6 class="text-primary text-uppercase">// About Us //</h6>
+          <h1 class="mb-4">
+            <span class="text-primary">T2F Trades</span> — Trusted Partner in Agricultural Commodities & Global Trade
+          </h1>
+          <p class="mb-4">
+            <b>T2F Trades</b> is a leading name in the export and supply of premium-quality agricultural products.
+            We specialize in delivering a wide range of food grains, cash crops, and spices including <b>Rice, Wheat,
+              Maize, Sugarcane, Pulses, Tea, and Cotton</b>.
+            Expanding our portfolio, we also provide <b>Banana, Tomato, Onion, Black Pepper, Clove, Cinnamon, Coconut,
+              Turmeric, Dried Ginger, Dried Garlic, Dried Red Chilli, and Tamarind</b>.
 
-    <!-- Maize -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/maize.jpg" class="card-img-top img-fluid" alt="Maize" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Maize</h5>
-          <p class="card-text">Nutrient-rich maize for multiple uses.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Maize">Enquiry</a>
-            <a href="maize.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
+            With a strong focus on quality, sustainable sourcing, and timely delivery, we cater to both domestic and
+            international markets.
+            Our mission is to bridge farmers and global consumers through fair trade, trust, and excellence.
+          </p>
 
-    <!-- Sugarcane -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/sugarcane.jpg" class="card-img-top img-fluid" alt="Sugarcane" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Sugarcane</h5>
-          <p class="card-text">Fresh sugarcane for food and beverage industries.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Sugarcane">Enquiry</a>
-            <a href="sugarcane.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pulses -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/pulses.jpg" class="card-img-top img-fluid" alt="Pulses" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Pulses</h5>
-          <p class="card-text">Rich in protein, perfect for healthy diets.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Pulses">Enquiry</a>
-            <a href="pulses.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tea -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/tea.jpg" class="card-img-top img-fluid" alt="Tea" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Tea</h5>
-          <p class="card-text">Refreshing and aromatic tea leaves.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Tea">Enquiry</a>
-            <a href="tea.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Cotton -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/cotton.jpg" class="card-img-top img-fluid" alt="Cotton" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Cotton</h5>
-          <p class="card-text">Soft and natural cotton for textiles.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Cotton">Enquiry</a>
-            <a href="cotton.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Banana -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/banana.jpg" class="card-img-top img-fluid" alt="Banana" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Banana</h5>
-          <p class="card-text">Fresh and organic bananas for export.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Banana">Enquiry</a>
-            <a href="banana.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tomato -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/tomato.jpg" class="card-img-top img-fluid" alt="Tomato" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Tomato</h5>
-          <p class="card-text">Juicy and fresh tomatoes for food processing.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Tomato">Enquiry</a>
-            <a href="tomato.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Onion -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/onion.jpg" class="card-img-top img-fluid" alt="Onion" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Onion</h5>
-          <p class="card-text">Fresh red onions with strong flavor.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Onion">Enquiry</a>
-            <a href="onion.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Black Pepper -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/blackpepper.jpg" class="card-img-top img-fluid" alt="Black Pepper" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Black Pepper</h5>
-          <p class="card-text">Premium spice with rich aroma.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Black Pepper">Enquiry</a>
-            <a href="blackpepper.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Clove -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/clove.jpg" class="card-img-top img-fluid" alt="Clove" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Clove</h5>
-          <p class="card-text">Aromatic clove spice for culinary uses.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Clove">Enquiry</a>
-            <a href="clove.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Cinnamon -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/cinnamon.jpg" class="card-img-top img-fluid" alt="Cinnamon" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Cinnamon</h5>
-          <p class="card-text">Rich and aromatic cinnamon spice.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Cinnamon">Enquiry</a>
-            <a href="cinnamon.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Coconut -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/coconut.jpg" class="card-img-top img-fluid" alt="Coconut" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Coconut</h5>
-          <p class="card-text">Fresh coconuts and coconut products.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Coconut">Enquiry</a>
-            <a href="coconut.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Turmeric -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/turmeric.jpg" class="card-img-top img-fluid" alt="Turmeric" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Turmeric</h5>
-          <p class="card-text">Organic turmeric with strong flavor.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Turmeric">Enquiry</a>
-            <a href="turmeric.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Ginger (dried) -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/ginger.jpg" class="card-img-top img-fluid" alt="Ginger" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Ginger (Dried)</h5>
-          <p class="card-text">High-quality dried ginger for culinary and medicinal use.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Ginger">Enquiry</a>
-            <a href="ginger.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Garlic (dried) -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/garlic.jpg" class="card-img-top img-fluid" alt="Garlic" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Garlic (Dried)</h5>
-          <p class="card-text">Dried garlic for culinary and medicinal purposes.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Garlic">Enquiry</a>
-            <a href="garlic.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Red Chilli (dried) -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/redchilli.jpg" class="card-img-top img-fluid" alt="Red Chilli" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Red Chilli (Dried)</h5>
-          <p class="card-text">Spicy and flavorful dried red chillies.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Red Chilli">Enquiry</a>
-            <a href="redchilli.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tamarind -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-      <div class="card h-100 text-center">
-        <img src="img/tamarind.jpg" class="card-img-top img-fluid" alt="Tamarind" style="height: 200px; object-fit: contain" />
-        <div class="card-body">
-          <h5 class="card-title">Tamarind</h5>
-          <p class="card-text">Tamarind fruit for culinary and food processing industries.</p>
-          <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-            <a href="#" class="btn btn-primary enquiry-btn" data-product="Tamarind">Enquiry</a>
-            <a href="tamarind.html" class="btn btn-outline-primary">Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-
-
-    <!-- Responsive image adjustments -->
-    <style>
-      @media (max-width: 576px) {
-        .card-img-top {
-          height: 200px !important;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .card-img-top {
-          height: 220px !important;
-        }
-      }
-    </style>
-
-    <!-- Products  Section End -->
-
-    <!-- Service Start -->
-  <div class="container-xxl service py-5">
-  <div class="container">
-    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-      <h6 class="text-primary text-uppercase">// Our Quality Standards //</h6>
-      <h1 class="mb-5">Why Choose Us</h1>
-    </div>
-    <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
-      <div class="col-lg-4">
-        <div class="nav w-100 nav-pills me-4">
-          <!-- Tab 1 -->
-          <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
-            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-            <i class="fa fa-leaf fa-2x me-3"></i>
-            <h4 class="m-0">Premium Grains</h4>
-          </button>
-          <!-- Tab 2 -->
-          <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-            <i class="fa fa-seedling fa-2x me-3"></i>
-            <h4 class="m-0">Organic Produce</h4>
-          </button>
-          <!-- Tab 3 -->
-          <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-            <i class="fa fa-tint fa-2x me-3"></i>
-            <h4 class="m-0">Spices & Herbs</h4>
-          </button>
-          <!-- Tab 4 -->
-          <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
-            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-            <i class="fa fa-apple-alt fa-2x me-3"></i>
-            <h4 class="m-0">Fresh Fruits & Vegetables</h4>
-          </button>
-          <!-- Tab 5 -->
-          <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
-            data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
-            <i class="fa fa-certificate fa-2x me-3"></i>
-            <h4 class="m-0">Quality Assurance</h4>
-          </button>
-        </div>
-      </div>
-
-      <div class="col-lg-8">
-        <div class="tab-content w-100">
-
-          <!-- Tab 1: Premium Grains -->
-          <div class="tab-pane fade show active" id="tab-pane-1">
-            <div class="row g-4">
-              <div class="col-md-6" style="min-height: 350px">
-                <div class="position-relative h-100">
-                  <img class="position-absolute img-fluid w-100 h-100"
-                    src="img/rice.jpg" style="object-fit: cover" alt="Premium Grains" />
+          <div class="row g-4 mb-3 pb-3">
+            <div class="col-12">
+              <div class="d-flex">
+                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                  style="width: 45px; height: 45px">
+                  <span class="fw-bold text-secondary">01</span>
+                </div>
+                <div class="ps-3">
+                  <h6>Food Grains & Pulses</h6>
+                  <span>
+                    Supplying high-quality rice, wheat, maize, and pulses trusted by global consumers.
+                  </span>
                 </div>
               </div>
-              <div class="col-md-6">
-                <h3 class="mb-3">Premium Grains</h3>
-                <p class="mb-4">
-                  Top-quality rice, wheat, maize, and pulses sourced for maximum freshness and nutritional value.
-                </p>
-                <p><i class="fa fa-check text-success me-3"></i>Selected for Purity & Size</p>
-                <p><i class="fa fa-check text-success me-3"></i>Consistent High Quality</p>
-                <p><i class="fa fa-check text-success me-3"></i>Carefully Processed & Stored</p>
-                <a href="#" class="btn btn-primary py-3 px-5 mt-3">
-                  Learn More <i class="fa fa-arrow-right ms-3"></i>
-                </a>
+            </div>
+
+            <div class="col-12">
+              <div class="d-flex">
+                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                  style="width: 45px; height: 45px">
+                  <span class="fw-bold text-secondary">02</span>
+                </div>
+                <div class="ps-3">
+                  <h6>Cash Crops & Beverages</h6>
+                  <span>
+                    Delivering premium sugarcane, tea, and cotton with a focus on sustainable farming practices.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="d-flex">
+                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                  style="width: 45px; height: 45px">
+                  <span class="fw-bold text-secondary">03</span>
+                </div>
+                <div class="ps-3">
+                  <h6>Spices, Fruits & Vegetables</h6>
+                  <span>
+                    Exporting black pepper, clove, cinnamon, turmeric, ginger, garlic, red chilli, tamarind, banana,
+                    tomato, and onion to international markets.
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Tab 2: Organic Produce -->
-          <div class="tab-pane fade" id="tab-pane-2">
-            <div class="row g-4">
-              <div class="col-md-6" style="min-height: 350px">
-                <div class="position-relative h-100">
-                  <img class="position-absolute img-fluid w-100 h-100"
-                    src="img/tea.jpg" style="object-fit: cover" alt="Organic Produce" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="mb-3">Organic Produce</h3>
-                <p class="mb-4">
-                  Premium tea, cotton, and pulses grown under natural farming practices for healthy living.
-                </p>
-                <p><i class="fa fa-check text-success me-3"></i>100% Organic & Safe</p>
-                <p><i class="fa fa-check text-success me-3"></i>No Harmful Chemicals</p>
-                <p><i class="fa fa-check text-success me-3"></i>Rich in Nutrients & Flavor</p>
-                <a href="#" class="btn btn-primary py-3 px-5 mt-3">
-                  Learn More <i class="fa fa-arrow-right ms-3"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tab 3: Spices & Herbs -->
-          <div class="tab-pane fade" id="tab-pane-3">
-            <div class="row g-4">
-              <div class="col-md-6" style="min-height: 350px">
-                <div class="position-relative h-100">
-                  <img class="position-absolute img-fluid w-100 h-100"
-                    src="img/blackpepper.jpgx" style="object-fit: cover" alt="Spices & Herbs" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="mb-3">Spices & Herbs</h3>
-                <p class="mb-4">
-                  High-quality black pepper, clove, cinnamon, turmeric, ginger, garlic, red chili, and tamarind.
-                </p>
-                <p><i class="fa fa-check text-success me-3"></i>Rich Aroma & Flavor</p>
-                <p><i class="fa fa-check text-success me-3"></i>Freshly Dried & Packed</p>
-                <p><i class="fa fa-check text-success me-3"></i>Carefully Sourced from Farms</p>
-                <a href="#" class="btn btn-primary py-3 px-5 mt-3">
-                  Learn More <i class="fa fa-arrow-right ms-3"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tab 4: Fresh Fruits & Vegetables -->
-          <div class="tab-pane fade" id="tab-pane-4">
-            <div class="row g-4">
-              <div class="col-md-6" style="min-height: 350px">
-                <div class="position-relative h-100">
-                  <img class="position-absolute img-fluid w-100 h-100"
-                    src="img/banana.jpg" style="object-fit: cover" alt="Fresh Fruits & Vegetables" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="mb-3">Fresh Fruits & Vegetables</h3>
-                <p class="mb-4">
-                  Quality bananas, tomatoes, onions, and coconut sourced for freshness and nutritional value.
-                </p>
-                <p><i class="fa fa-check text-success me-3"></i>Harvested at Peak Freshness</p>
-                <p><i class="fa fa-check text-success me-3"></i>Carefully Packed & Delivered</p>
-                <p><i class="fa fa-check text-success me-3"></i>Rich in Taste & Nutrients</p>
-                <a href="#" class="btn btn-primary py-3 px-5 mt-3">
-                  Learn More <i class="fa fa-arrow-right ms-3"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tab 5: Quality Assurance -->
-          <div class="tab-pane fade" id="tab-pane-5">
-            <div class="row g-4">
-              <div class="col-md-6" style="min-height: 350px">
-                <div class="position-relative h-100">
-                  <img class="position-absolute img-fluid w-100 h-100"
-                    src="img/sugarcane.jpg" style="object-fit: cover" alt="Quality Assurance" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <h3 class="mb-3">Quality Assurance</h3>
-                <p class="mb-4">
-                  Rigorous quality checks at every stage to ensure that our grains, produce, and spices meet global standards.
-                </p>
-                <p><i class="fa fa-check text-success me-3"></i>Lab Tested for Purity</p>
-                <p><i class="fa fa-check text-success me-3"></i>Consistent High Standards</p>
-                <p><i class="fa fa-check text-success me-3"></i>Safe & Hygienic Packaging</p>
-                <a href="#" class="btn btn-primary py-3 px-5 mt-3">
-                  Learn More <i class="fa fa-arrow-right ms-3"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
+          <a href="#" class="btn bg-primary text-white py-3 px-5">
+            Read More <i class="fa fa-arrow-right ms-3"></i>
+          </a>
         </div>
       </div>
     </div>
   </div>
-</div>
+  <!-- About End -->
+  <!-- Products Section -->
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Our Products</h1>
+    <div class="row justify-content-center">
 
-
-
-    <!-- Service End -->
-
-    <!-- collection -->
-<div class="container-xxl py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h6 class="text-primary text-uppercase">// Our Collection //</h6>
-      <h1>Explore Our Premium Products</h1>
-    </div>
-
-    <div class="row g-4 justify-content-center">
-      <!-- Card 1: Rice -->
-      <div class="col-lg-4 col-md-6">
+      <!-- Rice -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
-          <img
-            src="img/rice.jpg"
-            class="card-img-top"
-            alt="Rice"
-            style="object-fit: cover; height: 250px;"
-          />
+          <img src="img/rice.jpg" class="card-img-top img-fluid" alt="Rice"
+            style="height: 200px; object-fit: contain" />
           <div class="card-body">
             <h5 class="card-title">Rice</h5>
-            <p>Premium quality rice, carefully selected for purity, flavor, and nutritional value.</p>
-            <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            <p class="card-text">Premium quality rice for global markets.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="" class="btn btn-primary enquiry-btn" data-product="Rice">Enquiry</a>
+              <a href="Rice.html" class="btn btn-outline-primary">Details</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 2: Wheat -->
-      <div class="col-lg-4 col-md-6">
+      <!-- Wheat -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
-          <img
-            src="img/wheat.jpg"
-            class="card-img-top"
-            alt="Wheat"
-            style="object-fit: cover; height: 250px;"
-          />
+          <img src="img/wheat.jpg" class="card-img-top img-fluid" alt="Wheat"
+            style="height: 200px; object-fit: contain" />
           <div class="card-body">
             <h5 class="card-title">Wheat</h5>
-            <p>High-grade wheat, ideal for flour production and daily consumption, sourced sustainably.</p>
-            <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            <p class="card-text">High-quality wheat grains for food industries.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Wheat">Enquiry</a>
+              <a href="Wheat.html" class="btn btn-outline-primary">Details</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 3: Black Pepper -->
-      <div class="col-lg-4 col-md-6">
+      <!-- Maize -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
-          <img
-            src="img/blackpepper.jpg"
-            class="card-img-top"
-            alt="Black Pepper"
-            style="object-fit: cover; height: 250px;"
-          />
+          <img src="img/maize.jpg" class="card-img-top img-fluid" alt="Maize"
+            style="height: 200px; object-fit: contain" />
           <div class="card-body">
-            <h5 class="card-title">Black Pepper</h5>
-            <p>Fresh and aromatic black pepper, carefully dried and packed for maximum flavor.</p>
-            <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            <h5 class="card-title">Maize</h5>
+            <p class="card-text">Nutrient-rich maize for multiple uses.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Maize">Enquiry</a>
+              <a href="Maize.html" class="btn btn-outline-primary">Details</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Card 4: Cinnamon -->
-      <div class="col-lg-4 col-md-6">
+      <!-- Sugarcane -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
         <div class="card h-100 text-center">
-          <img
-            src="img/cinnamon.jpg"
-            class="card-img-top"
-            alt="Cinnamon"
-            style="object-fit: cover; height: 250px;"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Cinnamon</h5>
-            <p>High-quality cinnamon sticks and powder, sourced from premium farms for aroma and taste.</p>
-            <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5: Banana -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 text-center">
-          <img
-            src="img/banana.jpg"
-            class="card-img-top"
-            alt="Banana"
-            style="object-fit: cover; height: 250px;"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Banana</h5>
-            <p>Fresh and naturally ripened bananas, harvested for taste, nutrition, and quality.</p>
-            <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6: Sugarcane -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card h-100 text-center">
-          <img
-            src="img/sugarcane.jpg"
-            class="card-img-top"
-            alt="Sugarcane"
-            style="object-fit: cover; height: 250px;"
-          />
+          <img src="img/sugarcane.jpg" class="card-img-top img-fluid" alt="Sugarcane"
+            style="height: 200px; object-fit: contain" />
           <div class="card-body">
             <h5 class="card-title">Sugarcane</h5>
-            <p>Top-grade sugarcane, carefully cultivated and harvested for maximum sweetness and quality.</p>
-            <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            <p class="card-text">Fresh sugarcane for food and beverage industries.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Sugarcane">Enquiry</a>
+              <a href="Sugarcane.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pulses -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/pulses.jpg" class="card-img-top img-fluid" alt="Pulses"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Pulses</h5>
+            <p class="card-text">Rich in protein, perfect for healthy diets.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Pulses">Enquiry</a>
+              <a href="Pulses.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tea -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/tea.jpg" class="card-img-top img-fluid" alt="Tea" style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Tea</h5>
+            <p class="card-text">Refreshing and aromatic tea leaves.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Tea">Enquiry</a>
+              <a href="tea.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cotton -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/cotton.jpg" class="card-img-top img-fluid" alt="Cotton"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Cotton</h5>
+            <p class="card-text">Soft and natural cotton for textiles.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Cotton">Enquiry</a>
+              <a href="cotton.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banana -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/banana.jpg" class="card-img-top img-fluid" alt="Banana"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Banana</h5>
+            <p class="card-text">Fresh and organic bananas for export.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Banana">Enquiry</a>
+              <a href="banana.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tomato -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/tomato.jpg" class="card-img-top img-fluid" alt="Tomato"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Tomato</h5>
+            <p class="card-text">Juicy and fresh tomatoes for food processing.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Tomato">Enquiry</a>
+              <a href="tomato.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onion -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/onion.jpg" class="card-img-top img-fluid" alt="Onion"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Onion</h5>
+            <p class="card-text">Fresh red onions with strong flavor.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Onion">Enquiry</a>
+              <a href="onion.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Black Pepper -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/blackpepper.jpg" class="card-img-top img-fluid" alt="Black Pepper"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Black Pepper</h5>
+            <p class="card-text">Premium spice with rich aroma.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Black Pepper">Enquiry</a>
+              <a href="black-papper.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clove -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/clove.jpg" class="card-img-top img-fluid" alt="Clove"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Clove</h5>
+            <p class="card-text">Aromatic clove spice for culinary uses.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Clove">Enquiry</a>
+              <a href="clove.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cinnamon -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/cinnamon.jpg" class="card-img-top img-fluid" alt="Cinnamon"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Cinnamon</h5>
+            <p class="card-text">Rich and aromatic cinnamon spice.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Cinnamon">Enquiry</a>
+              <a href="cinnaamon.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coconut -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/coconut.jpg" class="card-img-top img-fluid" alt="Coconut"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Coconut</h5>
+            <p class="card-text">Fresh coconuts and coconut products.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Coconut">Enquiry</a>
+              <a href="coconut.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Turmeric -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/turmeric.jpg" class="card-img-top img-fluid" alt="Turmeric"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Turmeric</h5>
+            <p class="card-text">Organic turmeric with strong flavor.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Turmeric">Enquiry</a>
+              <a href="turmeric.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ginger (dried) -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/ginger.jpg" class="card-img-top img-fluid" alt="Ginger"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Ginger (Dried)</h5>
+            <p class="card-text">High-quality dried ginger for culinary and medicinal use.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Ginger">Enquiry</a>
+              <a href="ginger.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Garlic (dried) -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/garlic.jpg" class="card-img-top img-fluid" alt="Garlic"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Garlic (Dried)</h5>
+            <p class="card-text">Dried garlic for culinary and medicinal purposes.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Garlic">Enquiry</a>
+              <a href="garlic.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Red Chilli (dried) -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/redchilli.jpg" class="card-img-top img-fluid" alt="Red Chilli"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Red Chilli (Dried)</h5>
+            <p class="card-text">Spicy and flavorful dried red chillies.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Red Chilli">Enquiry</a>
+              <a href="Red-chilli.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tamarind -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <img src="img/tamarind.jpg" class="card-img-top img-fluid" alt="Tamarind"
+            style="height: 200px; object-fit: contain" />
+          <div class="card-body">
+            <h5 class="card-title">Tamarind</h5>
+            <p class="card-text">Tamarind fruit for culinary and food processing industries.</p>
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+              <a href="#" class="btn btn-primary enquiry-btn" data-product="Tamarind">Enquiry</a>
+              <a href="Tamarind.html" class="btn btn-outline-primary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Responsive image adjustments -->
+  <style>
+    @media (max-width: 576px) {
+      .card-img-top {
+        height: 200px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .card-img-top {
+        height: 220px !important;
+      }
+    }
+  </style>
+  <!-- Products  Section End -->
+
+  <!-- Service Start -->
+  <div class="container-xxl service py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="text-primary text-uppercase">// Our Quality Standards //</h6>
+        <h1 class="mb-5">Why Choose Us</h1>
+      </div>
+      <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="col-lg-4">
+          <div class="nav w-100 nav-pills me-4">
+            <!-- Tab 1 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-1" type="button">
+              <i class="fa fa-leaf fa-2x me-3"></i>
+              <h4 class="m-0">Premium Grains</h4>
+            </button>
+            <!-- Tab 2 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-2" type="button">
+              <i class="fa fa-seedling fa-2x me-3"></i>
+              <h4 class="m-0">Organic Produce</h4>
+            </button>
+            <!-- Tab 3 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-3" type="button">
+              <i class="fa fa-tint fa-2x me-3"></i>
+              <h4 class="m-0">Spices & Herbs</h4>
+            </button>
+            <!-- Tab 4 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-4" type="button">
+              <i class="fa fa-apple-alt fa-2x me-3"></i>
+              <h4 class="m-0">Fresh Fruits & Vegetables</h4>
+            </button>
+            <!-- Tab 5 -->
+            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill"
+              data-bs-target="#tab-pane-5" type="button">
+              <i class="fa fa-certificate fa-2x me-3"></i>
+              <h4 class="m-0">Quality Assurance</h4>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="tab-content w-100">
+
+            <!-- Tab 1: Premium Grains -->
+            <div class="tab-pane fade show active" id="tab-pane-1">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/rice.jpg" style="object-fit: cover"
+                      alt="Premium Grains" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">Premium Grains</h3>
+                  <p class="mb-4">
+                    Top-quality rice, wheat, maize, and pulses sourced for maximum freshness and nutritional value.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Selected for Purity & Size</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Consistent High Quality</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Carefully Processed & Stored</p>
+                  <a href="#" class="btn btn-primary py-3 px-5 mt-3">
+                    Learn More <i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Organic Produce -->
+            <div class="tab-pane fade" id="tab-pane-2">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/tea.jpg" style="object-fit: cover"
+                      alt="Organic Produce" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">Organic Produce</h3>
+                  <p class="mb-4">
+                    Premium tea, cotton, and pulses grown under natural farming practices for healthy living.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>100% Organic & Safe</p>
+                  <p><i class="fa fa-check text-success me-3"></i>No Harmful Chemicals</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Rich in Nutrients & Flavor</p>
+                  <a href="#" class="btn btn-primary py-3 px-5 mt-3">
+                    Learn More <i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Spices & Herbs -->
+            <div class="tab-pane fade" id="tab-pane-3">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/blackpepper.jpgx"
+                      style="object-fit: cover" alt="Spices & Herbs" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">Spices & Herbs</h3>
+                  <p class="mb-4">
+                    High-quality black pepper, clove, cinnamon, turmeric, ginger, garlic, red chili, and tamarind.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Rich Aroma & Flavor</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Freshly Dried & Packed</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Carefully Sourced from Farms</p>
+                  <a href="#" class="btn btn-primary py-3 px-5 mt-3">
+                    Learn More <i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4: Fresh Fruits & Vegetables -->
+            <div class="tab-pane fade" id="tab-pane-4">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/banana.jpg" style="object-fit: cover"
+                      alt="Fresh Fruits & Vegetables" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">Fresh Fruits & Vegetables</h3>
+                  <p class="mb-4">
+                    Quality bananas, tomatoes, onions, and coconut sourced for freshness and nutritional value.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Harvested at Peak Freshness</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Carefully Packed & Delivered</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Rich in Taste & Nutrients</p>
+                  <a href="#" class="btn btn-primary py-3 px-5 mt-3">
+                    Learn More <i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 5: Quality Assurance -->
+            <div class="tab-pane fade" id="tab-pane-5">
+              <div class="row g-4">
+                <div class="col-md-6" style="min-height: 350px">
+                  <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="img/sugarcane.jpg"
+                      style="object-fit: cover" alt="Quality Assurance" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3 class="mb-3">Quality Assurance</h3>
+                  <p class="mb-4">
+                    Rigorous quality checks at every stage to ensure that our grains, produce, and spices meet global
+                    standards.
+                  </p>
+                  <p><i class="fa fa-check text-success me-3"></i>Lab Tested for Purity</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Consistent High Standards</p>
+                  <p><i class="fa fa-check text-success me-3"></i>Safe & Hygienic Packaging</p>
+                  <a href="#" class="btn btn-primary py-3 px-5 mt-3">
+                    Learn More <i class="fa fa-arrow-right ms-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- Service End -->
 
-
-
-    <!-- Collection end  -->
-
-    <!-- Enquery Start -->
-  <div
-  class="container-fluid bg-secondary booking my-5 wow fadeInUp"
-  data-wow-delay="0.1s"
->
-  <div class="container">
-    <div class="row gx-5">
-      <!-- Left Section -->
-      <div class="col-lg-6 py-5">
-        <div class="py-5">
-          <h1 class="text-white mb-4">
-            T2F Trades – Premium Quality Agricultural Products
-          </h1>
-          <p class="text-white mb-0">
-            At <b>T2F Trades</b>, we specialize in sourcing and supplying high-quality agricultural products including rice, wheat, maize, sugarcane, pulses, tea, cotton, banana, tomato, onion, black pepper, clove, cinnamon, coconut, turmeric, ginger, garlic, red chili, and tamarind.  
-            With years of expertise in the agricultural trading industry, we ensure that each product meets international standards of quality, freshness, and consistency.  
-            Our commitment to excellence, timely delivery, and sustainable sourcing practices makes us a trusted partner for businesses and distributors worldwide.
-          </p>
-        </div>
-      </div>
-
-      <!-- Right Section (Enquiry Form) -->
-      <div class="col-lg-6">
-        <div
-          class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
-          data-wow-delay="0.6s"
-        >
-          <h1 class="text-white mb-4">Enquire Now</h1>
-          <form onsubmit="sendToWhatsApp(); return false;">
-            <div class="row g-3">
-              <div class="col-12 col-sm-6">
-                <input
-                  type="text"
-                  class="form-control border-0"
-                  id="name"
-                  placeholder="Your Name"
-                  style="height: 55px"
-                />
-              </div>
-              <div class="col-12 col-sm-6">
-                <input
-                  type="email"
-                  class="form-control border-0"
-                  id="email"
-                  placeholder="Your Email"
-                  style="height: 55px"
-                />
-              </div>
-              <div class="col-12">
-                <input
-                  type="text"
-                  class="form-control border-0"
-                  id="message"
-                  placeholder="Your Message / Product Enquiry"
-                  style="height: 55px"
-                />
-              </div>
-              <div class="col-12">
-                <button class="btn btn-secondary w-100 py-3" type="submit">
-                  Submit Enquiry
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>  
-</div>
-
-
-
-
-    <!-- Enquery End -->
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="text-primary text-uppercase">// Our Artisans //</h6>
-          <h1 class="mb-5">Meet Our Expert Carpet Makers</h1>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="team-item">
-              <div class="position-relative overflow-hidden">
-                <img
-                  class="img-fluid"
-                  src="img/team3.jpg"
-                  style="object-fit: cover"
-                  alt=""
-                />
-                <div
-                  class="team-overlay position-absolute start-0 top-0 w-100 h-100"
-                >
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-light text-center p-4">
-                <h5 class="fw-bold mb-0">Mohd Arif</h5>
-                <small>Production & Quality Manager</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="team-item">
-              <div class="position-relative overflow-hidden">
-                <img class="img-fluid" src="img/team2.jpg" alt="" />
-                <div
-                  class="team-overlay position-absolute start-0 top-0 w-100 h-100"
-                >
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-light text-center p-4">
-                <h5 class="fw-bold mb-0">Sajid Khan</h5>
-                <small>Operations & Logistics Manager</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="team-item">
-              <div class="position-relative overflow-hidden">
-                <img class="img-fluid" src="img/team.jpg" alt="" />
-                <div
-                  class="team-overlay position-absolute start-0 top-0 w-100 h-100"
-                >
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-light text-center p-4">
-                <h5 class="fw-bold mb-0">Nasreen Bano</h5>
-                <small>Sales & Marketing Head</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div class="team-item">
-              <div class="position-relative overflow-hidden">
-                <img class="img-fluid" src="img/team4.jpg" alt="" />
-                <div
-                  class="team-overlay position-absolute start-0 top-0 w-100 h-100"
-                >
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a class="btn btn-square mx-1" href=""
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="bg-light text-center p-4">
-                <h5 class="fw-bold mb-0">Imran Qureshi</h5>
-                <small>Product & Design Specialist</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Team End -->
-
-    <!-- Testimonial Start -->
+  <!-- collection -->
   <div class="container-xxl py-5">
-  <div class="container">
-    <div class="text-center">
-      <h6 class="text-primary text-uppercase">// Testimonial //</h6>
-      <h1 class="mb-5">Our Clients Say!</h1>
+    <div class="container">
+      <div class="text-center mb-5">
+        <h6 class="text-primary text-uppercase">// Our Collection //</h6>
+        <h1>Explore Our Premium Products</h1>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1: Rice -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/rice.jpg" class="card-img-top" alt="Rice" style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Rice</h5>
+              <p>Premium quality rice, carefully selected for purity, flavor, and nutritional value.</p>
+              <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Wheat -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/wheat.jpg" class="card-img-top" alt="Wheat" style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Wheat</h5>
+              <p>High-grade wheat, ideal for flour production and daily consumption, sourced sustainably.</p>
+              <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Black Pepper -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/blackpepper.jpg" class="card-img-top" alt="Black Pepper"
+              style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Black Pepper</h5>
+              <p>Fresh and aromatic black pepper, carefully dried and packed for maximum flavor.</p>
+              <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Cinnamon -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/cinnamon.jpg" class="card-img-top" alt="Cinnamon" style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Cinnamon</h5>
+              <p>High-quality cinnamon sticks and powder, sourced from premium farms for aroma and taste.</p>
+              <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Banana -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/banana.jpg" class="card-img-top" alt="Banana" style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Banana</h5>
+              <p>Fresh and naturally ripened bananas, harvested for taste, nutrition, and quality.</p>
+              <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Sugarcane -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 text-center">
+            <img src="img/sugarcane.jpg" class="card-img-top" alt="Sugarcane"
+              style="object-fit: cover; height: 250px;" />
+            <div class="card-body">
+              <h5 class="card-title">Sugarcane</h5>
+              <p>Top-grade sugarcane, carefully cultivated and harvested for maximum sweetness and quality.</p>
+              <a href="#" class="btn btn-primary me-2">ENQUIRY</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="justify-content-center text-center py-5">
+      <a href="contact.html" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+  <!-- Collection end  -->
 
-    <div class="owl-carousel testimonial-carousel owl-theme">
-      <!-- Testimonial 1 -->
-      <div class="testimonial-item text-center">
-        <img class="bg-light rounded-circle p-2 mx-auto mb-3"
-             src="img/testimonial1.jpg" style="width: 80px; height: 80px" />
-        <h5 class="mb-0">Ramesh Kumar</h5>
-        <p>Rice Supplier</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "T2F Trades provides top-quality rice that is fresh and consistent. Their timely delivery and reliability make them our preferred supplier."
-          </p>
+  <!-- Enquery Start -->
+  <div class="container-fluid bg-secondary booking my-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="row gx-5">
+        <!-- Left Section -->
+        <div class="col-lg-6 py-5">
+          <div class="py-5">
+            <h1 class="text-white mb-4">
+              T2F Trades – Premium Quality Agricultural Products
+            </h1>
+            <p class="text-white mb-0">
+              At <b>T2F Trades</b>, we specialize in sourcing and supplying high-quality agricultural products including
+              rice, wheat, maize, sugarcane, pulses, tea, cotton, banana, tomato, onion, black pepper, clove, cinnamon,
+              coconut, turmeric, ginger, garlic, red chili, and tamarind.
+              With years of expertise in the agricultural trading industry, we ensure that each product meets
+              international standards of quality, freshness, and consistency.
+              Our commitment to excellence, timely delivery, and sustainable sourcing practices makes us a trusted
+              partner for businesses and distributors worldwide.
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Testimonial 2 -->
-      <div class="testimonial-item text-center">
-        <img class="bg-light rounded-circle p-2 mx-auto mb-3"
-             src="img/testimonial2.jpg" style="width: 80px; height: 80px" />
-        <h5 class="mb-0">Ananya Singh</h5>
-        <p>Wheat Distributor</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "The wheat supplied by T2F Trades is of excellent quality. Their professionalism and product consistency are remarkable."
-          </p>
-        </div>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="testimonial-item text-center">
-        <img class="bg-light rounded-circle p-2 mx-auto mb-3"
-             src="img/testimonial3.jpg" style="width: 80px; height: 80px" />
-        <h5 class="mb-0">Vikram Patel</h5>
-        <p>Banana Trader</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "The bananas supplied by T2F Trades are fresh, premium-quality, and delivered on time. Truly a reliable trading partner."
-          </p>
-        </div>
-      </div>
-
-      <!-- Testimonial 4 -->
-      <div class="testimonial-item text-center">
-        <img class="bg-light rounded-circle p-2 mx-auto mb-3"
-             src="img/testimonial4.jpg" style="width: 80px; height: 80px" />
-        <h5 class="mb-0">Priya Sharma</h5>
-        <p>Sugarcane Buyer</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "T2F Trades delivers high-quality sugarcane consistently. Their attention to quality and customer service is outstanding."
-          </p>
-        </div>
-      </div>
-
-      <!-- Testimonial 5 -->
-      <div class="testimonial-item text-center">
-        <img class="bg-light rounded-circle p-2 mx-auto mb-3"
-             src="img/testimonial5.jpg" style="width: 80px; height: 80px" />
-        <h5 class="mb-0">Sonal Kapoor</h5>
-        <p>Spices Supplier</p>
-        <div class="testimonial-text bg-light text-center p-4">
-          <p class="mb-0">
-            "The spices, including black pepper, cinnamon, and turmeric, are top-notch. T2F Trades maintains excellent quality and packaging standards."
-          </p>
+        <!-- Right Section (Enquiry Form) -->
+        <div class="col-lg-6">
+          <div class="bg-primary h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+            data-wow-delay="0.6s">
+            <h1 class="text-white mb-4">Enquire Now</h1>
+            <form onsubmit="sendToWhatsApp(); return false;">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <input type="text" class="form-control border-0" id="name" placeholder="Your Name"
+                    style="height: 55px" />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <input type="email" class="form-control border-0" id="email" placeholder="Your Email"
+                    style="height: 55px" />
+                </div>
+                <div class="col-12">
+                  <input type="text" class="form-control border-0" id="message"
+                    placeholder="Your Message / Product Enquiry" style="height: 55px" />
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-secondary w-100 py-3" type="submit">
+                    Submit Enquiry
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- Enquery End -->
 
+  <!-- Team Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="text-primary text-uppercase">// Our Artisans //</h6>
+        <h1 class="mb-5">Meet Our Expert Makers</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="team-item">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="img/team3.jpg" style="object-fit: cover" alt="" />
+              <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="bg-light text-center p-4">
+              <h5 class="fw-bold mb-0">Mohd Arif</h5>
+              <small>Production & Quality Manager</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="team-item">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="img/team2.jpg" alt="" />
+              <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="bg-light text-center p-4">
+              <h5 class="fw-bold mb-0">Sajid Khan</h5>
+              <small>Operations & Logistics Manager</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="team-item">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="img/team.jpg" alt="" />
+              <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="bg-light text-center p-4">
+              <h5 class="fw-bold mb-0">Nasreen Bano</h5>
+              <small>Sales & Marketing Head</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="team-item">
+            <div class="position-relative overflow-hidden">
+              <img class="img-fluid" src="img/team4.jpg" alt="" />
+              <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="bg-light text-center p-4">
+              <h5 class="fw-bold mb-0">Imran Qureshi</h5>
+              <small>Product & Design Specialist</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Team End -->
 
+  <!-- Testimonial Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center">
+        <h6 class="text-primary text-uppercase">// Testimonial //</h6>
+        <h1 class="mb-5">Our Clients Say!</h1>
+      </div>
+
+      <div class="owl-carousel testimonial-carousel owl-theme">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial1.jpg"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Ramesh Kumar</h5>
+          <p>Rice Supplier</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "T2F Trades provides top-quality rice that is fresh and consistent. Their timely delivery and reliability
+              make them our preferred supplier."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial2.jpg"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Ananya Singh</h5>
+          <p>Wheat Distributor</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "The wheat supplied by T2F Trades is of excellent quality. Their professionalism and product consistency
+              are remarkable."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial3.jpg"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Vikram Patel</h5>
+          <p>Banana Trader</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "The bananas supplied by T2F Trades are fresh, premium-quality, and delivered on time. Truly a reliable
+              trading partner."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial4.jpg"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Priya Sharma</h5>
+          <p>Sugarcane Buyer</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "T2F Trades delivers high-quality sugarcane consistently. Their attention to quality and customer service
+              is outstanding."
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="testimonial-item text-center">
+          <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial5.jpg"
+            style="width: 80px; height: 80px" />
+          <h5 class="mb-0">Sonal Kapoor</h5>
+          <p>Spices Supplier</p>
+          <div class="testimonial-text bg-light text-center p-4">
+            <p class="mb-0">
+              "The spices, including black pepper, cinnamon, and turmeric, are top-notch. T2F Trades maintains excellent
+              quality and packaging standards."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery and Owl Carousel -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
 
   <script>
@@ -1424,244 +1299,174 @@
     });
   </script>
 
-    <!-- Testimonial End -->
+  <!-- Testimonial End -->
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="text-primary text-uppercase">// Contact Us //</h6>
-          <h1 class="mb-5">Contact For Any Query</h1>
+  <!-- Contact Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="text-primary text-uppercase">// Contact Us //</h6>
+        <h1 class="mb-5">Contact For Any Query</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="row gy-4">
+            <div class="col-md-4">
+              <div class="bg-light d-flex flex-column justify-content-center p-4">
+                <h5 class="text-uppercase">// Customized Orders //</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-light d-flex flex-column justify-content-center p-4">
+                <h5 class="text-uppercase">// Product Inquiries //</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-light d-flex flex-column justify-content-center p-4">
+                <h5 class="text-uppercase">// After-Sales Support //</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row g-4">
-          <div class="col-12">
-            <div class="row gy-4">
-              <div class="col-md-4">
-                <div
-                  class="bg-light d-flex flex-column justify-content-center p-4"
-                >
-                  <h5 class="text-uppercase">// Customized Orders //</h5>
+        <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.048379748787!2d80.2411445748413!3d12.968756087346344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525de2a04d92b1%3A0x48c997fdcca9d118!2sVIAVI%20Solutions%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1756795846958!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6">
+          <div class="wow fadeInUp" data-wow-delay="0.2s">
+            <p class="mb-4">
+              We'd love to hear from you! Whether you're looking for custom
+              carpet solutions, product details, or need support, simply reach
+              out through the form below. Our team will respond promptly to
+              assist you.
+            </p>
+            <form onsubmit="sendToWhatsApp(); return false;">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" />
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" />
+                    <label for="email">Your Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
+                      style="height: 100px"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary w-100 py-3" type="submit">
+                    Send Message
+                  </button>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div
-                  class="bg-light d-flex flex-column justify-content-center p-4"
-                >
-                  <h5 class="text-uppercase">// Product Inquiries //</h5>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div
-                  class="bg-light d-flex flex-column justify-content-center p-4"
-                >
-                  <h5 class="text-uppercase">// After-Sales Support //</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d124388.13313369559!2d80.15905540384733!3d13.027445936675823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20no.35%2C%204th%20street%2C%20govindhasamy%20nagar%2C%20kandhachavdi%2C%20chennai%20-600096%20Product-Agriculture!5e0!3m2!1sen!2sin!4v1756725569110!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           
-          </div>
-          <div class="col-md-6">
-            <div class="wow fadeInUp" data-wow-delay="0.2s">
-              <p class="mb-4">
-                We'd love to hear from you! Whether you're looking for custom
-                carpet solutions, product details, or need support, simply reach
-                out through the form below. Our team will respond promptly to
-                assist you.
-              </p>
-              <form onsubmit="sendToWhatsApp(); return false;">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        name="name"
-                        placeholder="Your Name"
-                      />
-                      <label for="name">Your Name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        placeholder="Your Email"
-                      />
-                      <label for="email">Your Email</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="Leave a message here"
-                        id="message"
-                        name="message"
-                        style="height: 100px"
-                      ></textarea>
-                      <label for="message">Message</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary w-100 py-3" type="submit">
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- Contact End -->
+  </div>
+  <!-- Contact End -->
 
-    <script>
-      function sendToWhatsApp() {
-        // Get values
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const message = document.getElementById("message").value.trim();
-        // WhatsApp number (without +)
-        const phoneNumber = "91 8920803366"; // <-- apna number yahan daalein
-
-        // Create WhatsApp message
-        const whatsappMessage = `Hello, my name is *${name}* (%0AEmail: ${email})%0A%0A${message}`;
-
-        // Redirect to WhatsApp
-        const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
-        window.open(url, "_blank");
-      }
-    </script>
-
-    <script>
-      function enquireWhatsApp() {
-        const phoneNumber = "91 8920803366"; // 🔁 Replace with your WhatsApp number
-        const message =
-          "Hello, I am interested in the Persian Carpet. Please provide more details.";
-        const encodedMessage = encodeURIComponent(message);
-        const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-        window.open(url, "_blank");
-      }
-    </script>
-
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Address</h4>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i> no.35, 4th street, govindhasamy nagar, kandhachavdi, chennai -600096
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+91 9941602067
-            </p>
-            <p class="mb-2"><i class="fa fa-envelope me-3"></i>rohithrohith2324@gmail.com
-</p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Address</h4>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i> no.35, 4th street, govindhasamy nagar, kandhachavdi, chennai
+            -600096
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>+91 9941602067
+          </p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i>rohithrohith2324@gmail.com
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Opening Hours</h4>
-            <h6 class="text-light">Monday - Friday:</h6>
-            <p class="mb-4">09.00 AM - 09.00 PM</p>
-            <h6 class="text-light">Saturday - Sunday:</h6>
-            <p class="mb-0">09.00 AM - 12.00 PM</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Services</h4>
-            <a class="btn btn-link" href="">Home</a>
-            <a class="btn btn-link" href="">About </a>
-            <a class="btn btn-link" href="">Contact</a>
-            <a class="btn btn-link" href="">Services </a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Newsletter</h4>
-            <p>
-              Subscribe to our newsletter and be the first to know about new
-              carpet collections.
-            </p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control border-0 w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Opening Hours</h4>
+          <h6 class="text-light">Monday - Friday:</h6>
+          <p class="mb-4">09.00 AM - 09.00 PM</p>
+          <h6 class="text-light">Saturday - Sunday:</h6>
+          <p class="mb-0">09.00 AM - 12.00 PM</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Services</h4>
+          <a class="btn btn-link" href="">Home</a>
+          <a class="btn btn-link" href="">About </a>
+          <a class="btn btn-link" href="">Contact</a>
+          <a class="btn btn-link" href="">Services </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Newsletter</h4>
+          <p>
+            Subscribe to our newsletter and be the first to know about new
+            carpet collections.
+          </p>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">
+              SignUp
+            </button>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Culture N Garment LLP, All
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">T2F Trades, All
               Right Reserved. Designed By
-              <a class="border-bottom" href="https://trade4export.com"
-                >Trade4Export</a
-              >
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <div class="footer-menu">
-                <a href="">Home</a>
-                <a href="">Cookies</a>
-                <a href="">Help</a>
-                <a href="">FQAs</a>
-              </div>
+              <a class="border-bottom" href="https://trade4export.com">Trade4Export</a>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-menu">
+              <a href="">Home</a>
+              <a href="">Cookies</a>
+              <a href="">Help</a>
+              <a href="">FQAs</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/tempusdominus/js/moment.min.js"></script>
+  <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
